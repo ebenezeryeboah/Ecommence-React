@@ -15,7 +15,8 @@ const router = createBrowserRouter([
   { path: '/shop', element: <Shop /> },
   { path: '/about', element: <About /> },
   { path: '/contact', element: <Contact /> },
-  { path: '/product/:id', element: <ProductDetail /> }
+  // { path: '/product/:id', element: <ProductDetail /> }
+  { path: '/product-detail', element: <ProductDetail /> }
 ])
 function App() {
   // const [count, setCount] = useState(0)

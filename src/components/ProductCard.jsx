@@ -6,7 +6,7 @@ import { Link } from 'react-router'
 export default function ProductCard({ image, title, id }) {
     return (
         <div>
-            <Link to={`/product/${id}`}>
+            <Link to={`/product-detail?id=${id}`}>
                 <div>
                     <img src={image} alt={title} />
                     <span>-30%</span>
