@@ -7,13 +7,15 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import Shop from './pages/Shop'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import ProductDetail from './pages/ProductDetail'
 
 
 const router = createBrowserRouter([
   { path: '/', element: <Home /> },
   { path: '/shop', element: <Shop /> },
   { path: '/about', element: <About /> },
-  { path: '/contact', element: <Contact /> }
+  { path: '/contact', element: <Contact /> },
+  { path: '/product/:id', element: <ProductDetail /> }
 ])
 function App() {
   // const [count, setCount] = useState(0)
