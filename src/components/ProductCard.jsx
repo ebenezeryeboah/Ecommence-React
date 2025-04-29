@@ -1,14 +1,17 @@
 // import p1 from "../assets/images/p1.png"
 // Another way to pass images around
 
+import { Link } from 'react-router'
 
-export default function ProductCard({image, title}) {
+export default function ProductCard({ image, title, id }) {
     return (
         <div>
-            <div>
-                <img src={image} alt={title} />
-                <span>-30%</span>
-            </div>
+            <Link to={`/product-detail?id=${id}`}>
+                <div>
+                    <img src={image} alt={title} />
+                    <span>-30%</span>
+                </div>
+            </Link>
             <div>
                 <h1>{title}</h1>
                 <p>Stylish cafe chair</p>

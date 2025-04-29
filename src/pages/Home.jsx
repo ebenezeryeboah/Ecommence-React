@@ -44,6 +44,7 @@ export default function Home() {
                 image={product.image}
                 title={product.title}
                 key={product.id}
+                id={product.id}
               />
             );
           })}
